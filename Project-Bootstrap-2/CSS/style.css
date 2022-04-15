@@ -42,3 +42,98 @@
   border: 0px;
   border-radius: 0px;
 }
+
+@media only screen and (max-width: 991px) {
+  #searchform {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    left: -20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+  #top-bar .navbar-brand img {
+    margin: 5px;
+  }
+  #top-bar {
+    padding: 0;
+  }
+}
+
+/* Banner Styling */
+
+#banner {
+  background-color: #fcc302;
+  padding-bottom: 20px;
+}
+
+#banner #bannerText h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-top: 85px;
+}
+
+#banner #bannerText p {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#banner #bannerImg {
+  padding-top: 20px;
+}
+
+#banner-btn-1 {
+  background-color: #00bec9;
+  color: white;
+  border: 2px solid #00bec9;
+}
+
+#banner-btn-2 {
+  color: white;
+  border: 2px solid white;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 1120px) {
+  #banner #bannerText h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+  }
+  #banner #bannerImg {
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #banner #bannerText h1 {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .img-fluid {
+    max-width: 121%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  #banner #bannerText h1 {
+    margin-top: 35px;
+  }
+  .img-fluid {
+    max-width: 134%;
+  }
+  #banner #bannerText p {
+    margin-top: 15px;
+    margin-bottom: 19px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .img-fluid {
+    max-width: 100%;
+  }
+}
