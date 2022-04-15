@@ -28,6 +28,7 @@
   position: relative;
   left: 47px;
   box-shadow: 5px 10px 11px 0px #00000021;
+  font-family: "Montserrat", sans-serif;
 }
 
 #searchbox::placeholder {
@@ -81,6 +82,7 @@
   color: white;
   margin-top: 25px;
   margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #banner #bannerImg {
@@ -91,11 +93,14 @@
   background-color: #00bec9;
   color: white;
   border: 2px solid #00bec9;
+  font-family: "Montserrat", sans-serif;
 }
 
 #banner-btn-2 {
   color: white;
   border: 2px solid white;
+  font-family: "Montserrat", sans-serif;
+
   margin-left: 15px;
 }
 
@@ -141,14 +146,24 @@
 /* Services */
 
 #service-text {
-  padding-top: 10%;
+  padding-top: 8%;
   padding-bottom: 5%;
+}
+
+#service-text h1 {
+  color: rgb(52, 52, 52);
+  font-size: 2.5rem;
+}
+
+#service-text p {
+  font-family: "Montserrat", sans-serif;
 }
 
 #service-btn {
   color: white;
   background-color: #fcc302;
   border: 2px solid #fcc302;
+  font-family: "Montserrat", sans-serif;
 }
 
 #service-img {
@@ -165,4 +180,35 @@
   #services {
     padding-bottom: 3%;
   }
+  #service-text h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Counter */
+
+#counter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/counter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#counter-icon {
+  font-size: 70px;
+}
+
+@media only screen and (max-width: 500px) {
+  #counter-icon {
+    font-size: 60px;
+  }
+}
+
+#post-img {
+  width: 350px;
+  height: 250px;
 }
