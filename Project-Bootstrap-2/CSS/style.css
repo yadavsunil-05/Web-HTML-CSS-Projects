@@ -137,3 +137,32 @@
     max-width: 100%;
   }
 }
+
+/* Services */
+
+#service-text {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+#service-btn {
+  color: white;
+  background-color: #fcc302;
+  border: 2px solid #fcc302;
+}
+
+#service-img {
+  display: flex;
+  padding: 5%;
+  align-items: center;
+}
+
+#service-dog {
+  border-radius: 145px;
+}
+
+@media only screen and (max-width: 760px) {
+  #services {
+    padding-bottom: 3%;
+  }
+}
