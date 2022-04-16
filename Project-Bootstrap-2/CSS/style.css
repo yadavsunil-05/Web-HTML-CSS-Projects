@@ -259,3 +259,78 @@
     margin-bottom: 40px;
   }
 }
+
+/* Footer */
+
+#footer {
+  background-color: #343434;
+  padding: 80px 0;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer-form {
+  margin: 10px 0;
+}
+
+#footer-search {
+  background-color: #fcc302;
+  color: white;
+  border: 0;
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  position: relative;
+  left: 10px;
+}
+
+#footer-submit {
+  background-color: #00bec9;
+  color: white;
+  border: 0;
+  border-radius: 0;
+  padding: 15px 40px;
+}
+
+#footer-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+.social-icon {
+  font-size: 25px;
+  padding-left: 6px;
+}
+
+@media only screen and (max-width: 1150px) {
+  #footer-search {
+    max-width: 180px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  #footer-search {
+    max-width: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #footer-search {
+    max-width: 120px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #footer-search {
+    max-width: 200px;
+  }
+  #footer {
+    padding-top: 10px;
+  }
+  #footer h4 {
+    padding-top: 50px;
+  }
+}
