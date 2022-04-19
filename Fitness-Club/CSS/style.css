@@ -1,41 +1,239 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600&display=swap');
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-  --main-color:#283526;
-  --primary-color:#888888;
-  --button-background:#4B709E;
-  --primary-button-background:#fe7649;
-  --background-color:#e2efff;
+body {
+  --main-color: #283526;
+  --primary-color: #888888;
+  --button-background: #4B709E;
+  --primary-button-background: #fe7649;
+  --background-color: #eef2f7;
 }
 
-h1,h2{
+h1,
+h2 {
   font-family: 'Roboto Slab', serif;
-  color:var(--main-color);
-} 
-
-h3,h4{
-  font-family: 'Roboto Slab', serif;
-  color:var(--main-color);
+  color: var(--main-color);
+  font-weight: bolder;
 }
 
-h3{
+h3,
+h4 {
+  font-family: 'Roboto Slab', serif;
+  color: var(--main-color);
+}
+
+h3 {
   font-weight: 750;
   font-size: 2.2rem;
   line-height: 6rem;
   text-transform: capitalize;
 }
 
-p,a,li,button{
+p,
+a,
+li,
+button {
   font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+/* Our Main Menu Style */
+
+header {
+  padding: 0 8rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  /* background-color: antiquewhite; */
+}
+
+header nav .left-side-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+header nav .left-side-menu a img {
+  width: 13rem;
+  height: 5.5rem;
+}
+
+header nav .left-side-menu .sub-menu {
+  display: flex;
+  height: inherit;
+}
+
+header nav .left-side-menu .sub-menu a {
+  margin-right: 3.8rem;
+}
+
+header nav .left-side-menu .sub-menu a li {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  transition: all 0.2s;
+}
+
+header nav .left-side-menu .sub-menu a li:hover {
+  color: var(--button-background);
+}
+
+/* Right Side Menu */
+
+header .right-side-menu {
+  width: 50%;
+  display: flex;
+}
+
+header .right-side-menu .sub-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .right-side-menu .sub-menu a {
+  margin-right: 5rem;
+  padding: 0.6rem 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+}
+
+header .right-side-menu .sub-menu a li:hover {
+  color: var(--button-background);
+}
+
+header .right-side-menu .sub-menu button {
+  background-color: var(--button-background);
+  color: white;
+  padding: 0rem 2rem;
+  transition: background-color 0.5s;
+  position: relative;
+  z-index: 9;
+}
+
+header .right-side-menu .sub-menu button:hover {
+  background-color: #20426c;
+}
+
+
+/* First Hero Section Styling */
+
+.main-hero-section {
+  padding: 0 9.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+.main-hero-section .hero-left {
+  width: 100rem;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: right;
+}
+
+
+
+.main-hero-section h1 {
+  /* background-color: #888888; */
+  width: 55rem;
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.main-hero-section p {
+  margin-bottom: 3.5rem;
+  width: 40rem;
+  font-size: 1.5rem;
+}
+
+.main-hero-section a img {
+  width: 12rem;
+  height: 3.5rem;
+}
+
+.main-hero-section .appstore {
+  height: 3.9rem;
+  margin-bottom: -0.4rem;
+}
+
+.main-hero-section .button-group a:first-child {
+  margin-right: 2.5rem;
+}
+
+/* Right Hero Section Styling */
+
+.main-hero-section .hero-right {
+  width: 47%;
+  height: 100vh;
+  background: var(--background-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 60px 20px 0px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-hero-section .hero-right img {
+  width: 66rem;
+  height: 56rem;
+  margin-right: 28rem;
 }
