@@ -788,24 +788,22 @@ footer a {
   }
 
   .main-hero-section .hero-left {
-    padding-top: 25rem;
+    height: 50%;
+    padding-top: 3rem;
     padding-left: 6rem;
   }
 
+  .main-hero-section .button-group {
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+  }
+
   .main-hero-section .hero-right img {
-    padding-top: 3rem;
+    width: 48rem;
+    height: auto;
+    padding-top: 1rem;
   }
 
-
-  .section-third .card-container {
-    padding-left: 4rem;
-  }
-
-  .common-section .left-side figure img {
-    height: 45rem;
-  }
-
-  /* ----- */
 
   .common-section {
     width: 100%;
@@ -820,13 +818,13 @@ footer a {
   }
 
   .common-section .left-side figure img {
-    height: 50rem;
+    height: 45rem;
     margin-left: 5rem;
     width: 35rem;
   }
 
   .common-section .right-side {
-    margin-top: 2rem;
+    margin-top: 3rem;
     justify-content: start;
     height: auto;
   }
@@ -850,12 +848,8 @@ footer a {
   }
 
   #section-two .right-side {
-    padding: 2rem 6rem;
-    padding-top: 3.5rem;
-  }
-
-  .main-hero-section .hero-right img {
-    margin-right: 5rem;
+    padding: 3.5rem 6rem;
+    margin-bottom: 6rem;
   }
 
   .section-third {
@@ -875,6 +869,7 @@ footer a {
     grid-template-columns: 1fr;
     padding: 0;
     gap: 4px;
+    padding-left: 4rem;
   }
 
   .card-1 img,
@@ -893,6 +888,9 @@ footer a {
   #section-four .right-side {
     order: 2;
     padding-left: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   #section-four .left-side img {
@@ -940,4 +938,10 @@ footer a {
   }
 
 
+}
+
+@media only screen and (max-width:393px) {
+  .main-hero-section .hero-left {
+    padding-top: 6rem !important;
+  }
 }
